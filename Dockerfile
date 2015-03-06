@@ -10,4 +10,4 @@ RUN cd /usr/lib && tar xzvf oracle.tar.gz && rm oracle.tar.gz && echo 'export LD
 COPY ./etc /etc
 
 EXPOSE 80
-ENTRYPOINT [ "sh /entrypoint.sh" ]
+ENTRYPOINT [ "/entrypoint.sh" ]
